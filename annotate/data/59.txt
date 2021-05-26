@@ -1,0 +1,3 @@
+data collection\n
+SanJose Chennai Hartford Atlanta y
+Hyderabad Mysore Austin Seattle y

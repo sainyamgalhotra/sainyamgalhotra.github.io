@@ -1,0 +1,3 @@
+data collection\n
+Boston  LosAngeles Bangalore y
+LosAngeles Cambridge Trenton Bangalore y

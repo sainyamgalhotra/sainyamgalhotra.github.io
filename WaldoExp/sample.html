@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+<center><h2>Please label as Yes if the two images correspond to same monument/person/car.</h2></center>
+<form action="https://script.google.com/macros/s/AKfycby2WFvrvhM2WvoInLzJ8XHxnHwZb9u8KSVMZtuQODr2AUS_nke-/exec" method="post">
+1.) <table style="width:100%">
+  <tr>
+    <th><img src="images/v1.png" alt="Smiley face" height="250" width="250">
+	<br>
+</th>
+    <th><img src="images/v2.png" alt="Smiley face" height="250" width="250">
+</th>
+</table>
+ <center> <input type="radio" name="ans1" value="yes"> Yes
+  <input type="radio" name="ans1" value="no"> No<br></center>
+ 
+
+ 2.) <table style="width:100%">
+  <tr>
+    <th><img src="images/nd1.png" alt="Smiley face" height="250" width="250">
+  <br>
+</th>
+    <th><img src="images/nd2.png" alt="Smiley face" height="250" width="250">
+</th>
+</table>
+ <center> <input type="radio" name="ans2" value="yes"> Yes
+  <input type="radio" name="ans2" value="no"> No<br></center>
+ 
+
+ 3.) <table style="width:100%">
+  <tr>
+    <th><img src="images/crv1.png" alt="Smiley face" height="250" width="250">
+  <br>
+</th>
+    <th><img src="images/crv2.png" alt="Smiley face" height="250" width="250">
+</th>
+</table>
+ <center> <input type="radio" name="ans3" value="yes"> Yes
+  <input type="radio" name="ans3" value="no"> No<br></center>
+ 
+
+
+ 4.) <table style="width:100%">
+  <tr>
+    <th><img src="images/crv3.png" alt="Smiley face" height="250" width="250">
+  <br>
+</th>
+    <th><img src="images/crv2.png" alt="Smiley face" height="250" width="250">
+</th>
+</table>
+ <center> <input type="radio" name="ans4" value="yes"> Yes
+  <input type="radio" name="ans4" value="no"> No<br></center>
+ 
+
+
+ 5.) <table style="width:100%">
+  <tr>
+    <th><img src="images/rogue2.png" alt="Smiley face" height="250" width="250">
+  <br>
+</th>
+    <th><img src="images/crv4.png" alt="Smiley face" height="250" width="250">
+</th>
+</table>
+ <center> <input type="radio" name="ans9" value="yes"> Yes
+  <input type="radio" name="ans9" value="no"> No<br></center>
+ 
+
+
+
+  <br><br>
+  <input type="submit" value="Submit"><br><br>
+  Thanks for volunteering<br><br><br><br><br><br>
+  <input  type="hidden" name="webpage" value="monumentpairwise1">
+</form> 
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting us!
+      We will get back to you soon!</h2>
+  </div>
+
+ <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
+</body>
+</html>
+
