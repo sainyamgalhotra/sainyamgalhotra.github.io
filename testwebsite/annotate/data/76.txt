@@ -1,0 +1,4 @@
+data collection\n
+Hamilton Chennai SanFranciso Austin n
+Mangalore Mysore Austin Bangalore n
+Bangalore Chennai Boston SanJose y

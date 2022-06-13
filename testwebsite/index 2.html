@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Product example · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/product/">
+
+    
+
+    
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header class="site-header sticky-top py-1">
+  <nav class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
+    <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
+    <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
+    <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
+    <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
+    <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
+    <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
+  </nav>
+</header>
+
+<main>
+    <div class="details">
+    <center><img src="sainyam.jpg" alt="portrait" width="150"></center><br>
+    <p></p>
+
+    <h4><u><span style="font-variant: small-caps">News</span></u></h4>
+<br>
+<!--<h4> Jul 2017</h4>Here is our <a href="http://www.cse.iitd.ac.in/~sayan/refutation.pdf">report</a> systematically refuting and responding to the refutations made by Lu et al. on our SIGMOD 2017 <a href="http://people.cs.umass.edu/~sainyam/papers/SIGMOD17_im_benchmarking.pdf">paper</a> on "Debunking the Myths of Influence Maximization".
+-->
+<h4> April 2021 </h4> Papers accepted at PVLDB and AIES 2021.</h4>
+<h4> March 2021 </h4> Two papers accepted at SIGMOD 2021.</h4>
+<h4> Feb 2021 </h4> Paper accepted at VLDB Journal.</h4>
+<h4> April 2020 </h4> Honorable Mention at SIGMOD 2020 programming contest</h4>
+<h4> Jan 2020 </h4> Paper published at AIES 2018</h4>
+<h4> Nov 2017 </h4> Paper accepted at AAAI 2018</h4>
+<h4> Nov 2017 </h4> Paper accepted at SIGMOD 2018</h4>
+<h4> Jul 2017</h4> ACM SIGSOFT Distinguished Paper award to Fairness Testing: Testing Software for Discrimination in FSE 2017.
+<h4> Jan 2017</h4> Presented our benchmarking paper on Influence Maximization at <a href="http://mitdbg.github.io/nedbday/2017/#program">North East Database Day, 2017</a>.
+<h4>Oct 2016:</h4> First recipient of <a href="https://www.cics.umass.edu/support">Krithi Ramamritham Computer Science Scholarship</a> for contribution to the research of databases. </p>
+
+
+
+<h4>Sep, 2016: Paper accepted in <a href = "http://sigmod2017.org">SIGMOD 2017</a></h4> Debunking the myths of Influence Maximization in our new SIGMOD paper. </p>
+
+<h4>Sep, 2016:</h4> Attended <a href="http://vldb2016.persistent.com">VLDB 2016</a> from 5th-9th September. Presented the paper, discussing bloomgraphs : an efficient, compact graph datastructure for efficient conductance calculation. </p>
+
+<h4>June, 2016:</h4> Attended <a href="http://sigmod2016.org">SIGMOD 2016</a> from 26th June-1st July. </p>
+  </div>
+
+    <div class="body">
+          <font size=4 >
+            <p> I am a <a href="https://cifellows2021.org/">Computing Innovation Fellow</a> pursuing post-doctoral research at University of Chicago.  My research interests span the broad area of data analytics with particular focus on entity resolution and social network analysis.</p>
+
+                
+<p>I did my undergraduate studies from the <a href=http://cse.iitd.ac.in/>Computer Science department</a> of <a href="http://www.iitd.ac.in/"> Indian Institute of Technology Delhi </a> (IIT Delhi) in May, 2014. Prior to joining UMass, I worked as a budding scientist at Xerox Research Centre India, Bangalore for a year.</p>
+<br>
+<br>
+<h4>Recent Publications:</h4>
+<li> <a href="index.html">Sainyam Galhotra</a>, Behzad Golshan and Wang-Chiew Tan. Adaptive Rule Discovery for LabelingText Data in SIGMOD, 2021.
+<li> <a href="index.html">Sainyam Galhotra</a>, Donatella Firmani, Barna Saha and Divesh Srivastava. Beer: Blocking for Effective Entity Resolution in SIGMOD (Demo), 2021.
+<li> <a href="index.html">Sainyam Galhotra</a>, Donatella Firmani, Barna Saha and Divesh Srivastava. Efficient and Effective ER with Progressive Blocking in VLDB J., 2021.
+<li> Sandhya Saisubramanian, <a href="index.html">Sainyam Galhotra</a> and Shlomo Zilberstein. <a href="https://dl.acm.org/doi/abs/10.1145/3375627.3375843">Balancing the Tradeoff Between Clustering Value and Interpretability</a> in AIES 2020.<br>
+
+<li> <a href="index.html">Sainyam Galhotra</a>, Arya Mazumdar, Soumyabrata Pal and Barna Saha. <a href="https://arxiv.org/abs/1804.05013">Connectivity in Random Annulus Graphs and the Geometric Block Model</a> in Approx-Random 2019.<br>
+
+<li> <a href="index.html">Sainyam Galhotra</a>, Arya Mazumdar, Soumyabrata Pal and Barna Saha. <a href="https://arxiv.org/pdf/1709.05510.pdf">The Geometric Block Model</a> in AAAI 2018.<br>
+<br>
+<li> <a href="index.html">Sainyam Galhotra</a>, Donatella Firmani, Barna Saha and Divesh Srivastava. Robust Entity Resolution with Random Expansion in SIGMOD Conference, 2018 <font color="red">ACM SIGMOD Most Reproducible Award! </font> <br> <br></li>
+
+<li> <a href="index.html">Sainyam Galhotra</a>, Yuriy Brun and Alexandra Meliou. <a href="https://arxiv.org/pdf/1709.03221.pdf">Fairness testing: testing software for discrimination</a> in ESEC/FSE Conference 2017.<br> <font color="red"> ACM SigSoft Distinguished Paper Award</font> Media Coverage: <a href="http://technews.acm.org/archives.cfm?fo=2017-08-aug/aug-21-2017.html">ACM News </a>, <a href="http://mailchi.mp/technologyreview/the-download-mainstream-metal-printing-old-nuclears-bad-news-and-trumps-mars-madness-757345?e=13bf7860c1">MIT Technology Download</a>, <a href="https://www.enterprisetech.com/2017/08/31/unlearning-racism-sexism-learning-machines/">EnterpriseTech</a>, <A href="https://www.enterprisetech.com/2017/08/31/unlearning-racism-sexism-learning-machines/">Bloomberg</a><br><br>
+
+
+<li>Akhil Arora*, <a href="index.html">Sainyam Galhotra*</a> and Sayan Ranu. <a href="papers/SIGMOD17_im_benchmarking.pdf">Debunking the Myths of Influence Maximization: An In-Depth Benchmarking Study</a> in <a href="http://sigmod2017.org/">SIGMOD</a>, 2017 <font color="red">ACM SIGMOD Most Reproducible Award! </font> <br> <br></li>
+
+<li><a href="index.html">Sainyam Galhotra*</a>, Akhil Arora* and Shourya Roy. <a href = "papers/SIGMOD16_holistic_influence_maximization.pdf">Holistic Influence Maximization: Combining Scalability and Efficiency with Opinion-Aware Models</a> in <a href="http://sigmod2016.org/"> SIGMOD </a>, 2016<br><br></li>
+
+
+<li> <a href="index.html">Sainyam Galhotra</a>, Amitabha Bagchi, Srikanta Bedathur, Maya Ramanath and Vidit Jain. <a href = "papers/VLDB16_conductance.pdf"> Tracking the Conductance of Rapidly Evolving Topic-Subgraphs </a> in <a href="http://vldb2016.persistent.com/"> VLDB</a>, 2016 <br><br></li>
+
+
+<li> <a href="index.html">Sainyam Galhotra </a>, Akhil Arora, Srinivas Virinchi and Shourya Roy. <a href="papers/WWW15_ASIM.pdf">ASIM: A Scalable Algorithm for Influence Maximization under the Independent Cascade Model</a> in <a href = "http://www.www2015.it/">WWW</a>, 2015 <a href="papers/WWW15_ASIM_poster.pdf">[Poster]</a><br><br></li>
+
+
+</ul>
+<br>
+<br>
+<br>
+<!--<ul>
+<h3><font color="blue" >Academics</font></h3>
+    <li>Masters in Computer Science &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        CGPA : 4.0/4.0<br>
+        University of Massachusetts Amherst &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       Sept 2015 - Present<br></li>
+    
+    <br><br>
+    <li>B.Tech in Computer Science and Engineering<br>
+        Indian Institute of Technology Delhi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        July 2010 - May 2014<br></li>
+</ul>
+<br><br><br>
+<h3><font color="blue" >Work Experience</font></h3>
+<ul>
+    
+    <li>Research Intern, Google Research, Mountain View, USA  <br><br></li>
+    
+    <li>Budding Scientist, Xerox Research Center India (XRCI)  <br><br></li>
+    
+    <li>Research Intern, Yahoo Labs, Bangalore, India  <br><br></li>
+    
+    <li>Ecole Nationale Sup´erieure des T´el´ecommunications, France  <br><br></li>
+    
+</ul>-->
+
+<h4>Contact:</h4> sainyam at cs dot umass dot edu</li>
+      <!-- END BODY
+      <div class="x"></div> --></div>
+    <div id="footer">
+    <!-- Start of StatCounter Code -->
+
+    
+    
+    
+    
+    <!-- End of StatCounter Code -->
+    </div>  
+    </div>
+    
+ 
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+      <small class="d-block mb-3 text-muted">&copy; 2017–2022</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Cool stuff</a></li>
+        <li><a class="link-secondary" href="#">Random feature</a></li>
+        <li><a class="link-secondary" href="#">Team feature</a></li>
+        <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+        <li><a class="link-secondary" href="#">Another one</a></li>
+        <li><a class="link-secondary" href="#">Last time</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Resource name</a></li>
+        <li><a class="link-secondary" href="#">Resource</a></li>
+        <li><a class="link-secondary" href="#">Another resource</a></li>
+        <li><a class="link-secondary" href="#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Business</a></li>
+        <li><a class="link-secondary" href="#">Education</a></li>
+        <li><a class="link-secondary" href="#">Government</a></li>
+        <li><a class="link-secondary" href="#">Gaming</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Team</a></li>
+        <li><a class="link-secondary" href="#">Locations</a></li>
+        <li><a class="link-secondary" href="#">Privacy</a></li>
+        <li><a class="link-secondary" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>

@@ -1,0 +1,4 @@
+data collection\n
+Cambridge Austin Hyderabad SanJose y
+Hartford Austin Delhi Mumbai n
+Chennai Hamilton SanFranciso Austin n

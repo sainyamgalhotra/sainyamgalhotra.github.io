@@ -1,184 +1,186 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta name="author" content="Sainyam Galhotra">
-	<link rel="SHORTCUT ICON" href="gifs/cal.ico">
-	<link rel="stylesheet" href="files/minimal.css" type="text/css">
-	<style type="text/css" media="screen">
-	p.pub {}
-	span.pubtitle {font-weight:bold;}
-	a.pubtitle {font-weight:bold;}	
-	a.pubtitle:hover{}
-	.pubauth {}
-	.pubvenue {font-style:italic;}
-	.publinks a{ font-style:italic;}
-	.pubaward {color:#990000; font-style:italic;}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Product example · Bootstrap v5.2</title>
 
-	p.newsitem {
-	}
-	p.newsdate {
-	}
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/product/">
 
-	.course A{font-weight:bold;}
+    
 
-	.course A:hover{}
-	</style>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XEF4M9KH0L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    
 
-  gtag('config', 'G-XEF4M9KH0L');
-</script>
-	<title>Sainyam Galhotra, University of Massachusetts Amherst</title>
+<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-	<!--jQuery for templating-->
-  <script type="text/javascript" src="files/jquery-1.js"></script>
-  <script type="text/javascript" src="files/jquery.js"></script>
-  
-</head>
-<body>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XEF4M9KH0L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-  gtag('config', 'G-XEF4M9KH0L');
-</script>
-	<div id="content">
-	  <h1>Sainyam Galhotra</h1>
-     
-          <font size=4>	  <ul id="menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="publications.html">Publications</a></li>
-              <li><a href="academics.html">Projects</a></li>
-              <li><a href="https://sainyamgalhotra.github.io/SainyamGalhotra.pdf">CV</a></li>
-              <li><a href="talks.html">Talks/Service</a></li>
-              <li><a href="awards.html">Awards</a></li>
-              <li><a href="contact.html">Contact</a></li>
-          </ul>
-          </font>
-	  
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
 
-	<div class="post">
-	<div class="details">
-	  <center><img src="sainyam.jpg" alt="portrait" width="150"></center><br>
-	  <p></p>
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
 
-	  <h4><u><span style="font-variant: small-caps">News</span></u></h4>
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        .column2 {
+          float: left;
+          width: 70%;
+          padding: 5px;
+        }
+
+        .column {
+          float: left;
+          width: 30%;
+          padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        </style>
+  </head>
+  <body>
+    
+<header class="site-header sticky-top py-1">
+  <nav class="container d-flex flex-column flex-md-row justify-content-between">
+    <font class="py-2 d-none d-md-inline-block" color="white">Sainyam Galhotra</font>
+    <a class="py-2 d-none d-md-inline-block" href="index.html">Home</a>
+    <a class="py-2 d-none d-md-inline-block" href="publications.html">Publications</a>
+    <a class="py-2 d-none d-md-inline-block" href="academics.html">Projects</a>
+    <a class="py-2 d-none d-md-inline-block" href="https://sainyamgalhotra.github.io/SainyamGalhotra.pdf">CV</a>
+    <a class="py-2 d-none d-md-inline-block" href="talks.html">Talks/Service</a>
+    <a class="py-2 d-none d-md-inline-block" href="awards.html">Awards</a>
+    <a class="py-2 d-none d-md-inline-block" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+
+  <div class="d-md-flex w-100">
+    <div class="bg-gradient" style="width: 83%;">
+      <div class="m"  style="width: 95%">
+        <h2 align="left">Sainyam Galhotra</h2>
+        <div class="row" style="background-color:#e0e2e4;">
+          <div class="column">
+            <img src="sainyam.jpg" alt="portrait" width="150"></center>
+          </div>
+          <div class="column2">
+          <p align="left">I am a <a href="https://cifellows2021.org/">Computing Innovation Fellow</a> pursuing postdoctoral research at the University of Chicago. The goal of my research is to develop data discovery and integration tools for effective and responsible analytics. I strive to reduce data scientists' effort on dataset search and preparation (cleaning, integration, debugging) while enabling trust in the analytics pipeline and allowing them to focus on their downstream analysis.  My work has borrowed techniques from causal inference, data management, theoretical computer science, crowdsourcing and HCI to understand various aspects of trustworthy system design including robustness, explainability, and fairness.  </p>
+
+          <p align="left"> I received my Ph.D. from University of Massachusetts Amherst under the supervision of Barna Saha. I completed my undergraduate studies from <a href="http://www.iitd.ac.in/"> Indian Institute of Technology Delhi </a> (IIT Delhi) in May, 2014. Prior to joining UMass, I worked as a budding scientist at Xerox Research Centre India, Bangalore for a year.</p>
+          <br>   
+
+           </div>
+        </div>
+        <h4 align="left">Selected Publications:</h4>
+
+<li align ="left"> <a href="index.html">Sainyam Galhotra</a>, Donatella Firmani, Barna Saha, and Divesh Srivastava. Hierarchical Entity Resolution Using an Oracle in SIGMOD, 2022.
+<li align ="left"> <a href="index.html">Sainyam Galhotra</a>, Amir Gilad, Sudeepa Roy, and Babak Salimi. HypeR: Hypothetical Reasoning With What-If and How-To Queries Using a Probabilistic Causal Approach in SIGMOD, 2022. 
+
+<li align ="left"> <a href="index.html">Sainyam Galhotra</a>, Anna Fariha, Raoni Lourenço, Juliana Freire, Alexandra Meliou, and Divesh Srivastava. DataPrism: Exposing Disconnect between Data and Systems in SIGMOD, 2022. 
+
+<li align ="left"> <a href="index.html">Sainyam Galhotra</a>, Donatella Firmani, Barna Saha, and Divesh Srivastava. Robust Entity Resolution with Random Expansion in SIGMOD Conference, 2018 <font color="red">ACM SIGMOD Most Reproducible Award! </font> <br> <br></li>
+
+<li align ="left"> <a href="index.html">Sainyam Galhotra</a>, Yuriy Brun, and Alexandra Meliou. <a href="https://arxiv.org/pdf/1709.03221.pdf">Fairness testing: testing software for discrimination</a> in ESEC/FSE Conference 2017.<br> <font color="red"> ACM SigSoft Distinguished Paper Award</font> Media Coverage: <a href="http://technews.acm.org/archives.cfm?fo=2017-08-aug/aug-21-2017.html">ACM News </a>, <a href="http://mailchi.mp/technologyreview/the-download-mainstream-metal-printing-old-nuclears-bad-news-and-trumps-mars-madness-757345?e=13bf7860c1">MIT Technology Download</a>, <a href="https://www.enterprisetech.com/2017/08/31/unlearning-racism-sexism-learning-machines/">EnterpriseTech</a>, <A href="https://www.enterprisetech.com/2017/08/31/unlearning-racism-sexism-learning-machines/">Bloomberg</a><br><br>
+
+
+<li align ="left">Akhil Arora*, <a href="index.html">Sainyam Galhotra*</a>, and Sayan Ranu. <a href="papers/SIGMOD17_im_benchmarking.pdf">Debunking the Myths of Influence Maximization: An In-Depth Benchmarking Study</a> in <a href="http://sigmod2017.org/">SIGMOD</a>, 2017 <font color="red">ACM SIGMOD Most Reproducible Award! </font> <br> <br></li>
+
+
+</ul>
+
+<br>
+
+      </div>
+    </div>
+     <div class="bg-gradient" style="width: 17%; background-color:#E6E6FA;">
+      <div class="m"  style="width: 90%">
+        <h4><u><span style="font-variant: small-caps">Contact</span></u></h4>
+        <p align="left"> Email: sainyam@uchicago.edu  sainyamgalhotra@gmail.com</p>
+        <br>
+        Twitter: <a href="https://twitter.com/SainyamGalhotra">@SainyamGalhotra</a>
+        <br><br>
+        <a href="https://scholar.google.co.uk/citations?user=0_9V8PgAAAAJ&hl=en">Google scholar</a><br>
+        <a href="https://dblp.org/pid/136/7969.html">DBLP</a><br>
+        <a href="https://www.linkedin.com/in/sainyam/">Linkedin</a><br><br>
+
+         <h4><u><span style="font-variant: small-caps">News</span></u></h4>
 <br>
 <!--<h4> Jul 2017</h4>Here is our <a href="http://www.cse.iitd.ac.in/~sayan/refutation.pdf">report</a> systematically refuting and responding to the refutations made by Lu et al. on our SIGMOD 2017 <a href="http://people.cs.umass.edu/~sainyam/papers/SIGMOD17_im_benchmarking.pdf">paper</a> on "Debunking the Myths of Influence Maximization".
 -->
-<h4> April 2021 </h4> Papers accepted at PVLDB and AIES 2021.</h4>
-<h4> March 2021 </h4> Two papers accepted at SIGMOD 2021.</h4>
-<h4> Feb 2021 </h4> Paper accepted at VLDB Journal.</h4>
-<h4> April 2020 </h4> Honorable Mention at SIGMOD 2020 programming contest</h4>
-<h4> Jan 2020 </h4> Paper published at AIES 2018</h4>
-<h4> Nov 2017 </h4> Paper accepted at AAAI 2018</h4>
-<h4> Nov 2017 </h4> Paper accepted at SIGMOD 2018</h4>
-<h4> Jul 2017</h4> ACM SIGSOFT Distinguished Paper award to Fairness Testing: Testing Software for Discrimination in FSE 2017.
-<h4> Jan 2017</h4> Presented our benchmarking paper on Influence Maximization at <a href="http://mitdbg.github.io/nedbday/2017/#program">North East Database Day, 2017</a>.
-<h4>Oct 2016:</h4> First recipient of <a href="https://www.cics.umass.edu/support">Krithi Ramamritham Computer Science Scholarship</a> for contribution to the research of databases. </p>
+<p align="left"> <b>June 2022:</b> Presenting 4 papers and a tutorial at SIGMOD 2022 in Philly.</p>
+<p align="left"><b>June 2022:</b> Presented data discovery work virtually at IASSIST 2022.</p>
+<p align="left"><b> May 2022: </b> Attended NITRD and CIFellow workshop in DC.</p>
+
+
+      </div>
+
+    </div>
+  </div>
 
 
 
-<h4>Sep, 2016: Paper accepted in <a href = "http://sigmod2017.org">SIGMOD 2017</a></h4> Debunking the myths of Influence Maximization in our new SIGMOD paper. </p>
-
-<h4>Sep, 2016:</h4> Attended <a href="http://vldb2016.persistent.com">VLDB 2016</a> from 5th-9th September. Presented the paper, discussing bloomgraphs : an efficient, compact graph datastructure for efficient conductance calculation. </p>
-
-<h4>June, 2016:</h4> Attended <a href="http://sigmod2016.org">SIGMOD 2016</a> from 26th June-1st July. </p>
-	</div>
-
-	  <div class="body">
-          <font size=4 >
-            <p> I am a <a href="https://cifellows2021.org/">Computing Innovation Fellow</a> pursuing post-doctoral research at University of Chicago.  My research interests span the broad area of data analytics with particular focus on entity resolution and social network analysis.</p>
-
-								
-<p>I did my undergraduate studies from the <a href=http://cse.iitd.ac.in/>Computer Science department</a> of <a href="http://www.iitd.ac.in/"> Indian Institute of Technology Delhi </a> (IIT Delhi) in May, 2014. Prior to joining UMass, I worked as a budding scientist at Xerox Research Centre India, Bangalore for a year.</p>
-<br>
-<br>
-<h4>Recent Publications:</h4>
-<li> <a href="index.html">Sainyam Galhotra</a>, Behzad Golshan and Wang-Chiew Tan. Adaptive Rule Discovery for LabelingText Data in SIGMOD, 2021.
-<li> <a href="index.html">Sainyam Galhotra</a>, Donatella Firmani, Barna Saha and Divesh Srivastava. Beer: Blocking for Effective Entity Resolution in SIGMOD (Demo), 2021.
-<li> <a href="index.html">Sainyam Galhotra</a>, Donatella Firmani, Barna Saha and Divesh Srivastava. Efficient and Effective ER with Progressive Blocking in VLDB J., 2021.
-<li> Sandhya Saisubramanian, <a href="index.html">Sainyam Galhotra</a> and Shlomo Zilberstein. <a href="https://dl.acm.org/doi/abs/10.1145/3375627.3375843">Balancing the Tradeoff Between Clustering Value and Interpretability</a> in AIES 2020.<br>
-
-<li> <a href="index.html">Sainyam Galhotra</a>, Arya Mazumdar, Soumyabrata Pal and Barna Saha. <a href="https://arxiv.org/abs/1804.05013">Connectivity in Random Annulus Graphs and the Geometric Block Model</a> in Approx-Random 2019.<br>
-
-<li> <a href="index.html">Sainyam Galhotra</a>, Arya Mazumdar, Soumyabrata Pal and Barna Saha. <a href="https://arxiv.org/pdf/1709.05510.pdf">The Geometric Block Model</a> in AAAI 2018.<br>
-<br>
-<li> <a href="index.html">Sainyam Galhotra</a>, Donatella Firmani, Barna Saha and Divesh Srivastava. Robust Entity Resolution with Random Expansion in SIGMOD Conference, 2018 <font color="red">ACM SIGMOD Most Reproducible Award! </font> <br> <br></li>
-
-<li> <a href="index.html">Sainyam Galhotra</a>, Yuriy Brun and Alexandra Meliou. <a href="https://arxiv.org/pdf/1709.03221.pdf">Fairness testing: testing software for discrimination</a> in ESEC/FSE Conference 2017.<br> <font color="red"> ACM SigSoft Distinguished Paper Award</font> Media Coverage: <a href="http://technews.acm.org/archives.cfm?fo=2017-08-aug/aug-21-2017.html">ACM News </a>, <a href="http://mailchi.mp/technologyreview/the-download-mainstream-metal-printing-old-nuclears-bad-news-and-trumps-mars-madness-757345?e=13bf7860c1">MIT Technology Download</a>, <a href="https://www.enterprisetech.com/2017/08/31/unlearning-racism-sexism-learning-machines/">EnterpriseTech</a>, <A href="https://www.enterprisetech.com/2017/08/31/unlearning-racism-sexism-learning-machines/">Bloomberg</a><br><br>
 
 
-<li>Akhil Arora*, <a href="index.html">Sainyam Galhotra*</a> and Sayan Ranu. <a href="papers/SIGMOD17_im_benchmarking.pdf">Debunking the Myths of Influence Maximization: An In-Depth Benchmarking Study</a> in <a href="http://sigmod2017.org/">SIGMOD</a>, 2017 <font color="red">ACM SIGMOD Most Reproducible Award! </font> <br> <br></li>
-
-<li><a href="index.html">Sainyam Galhotra*</a>, Akhil Arora* and Shourya Roy. <a href = "papers/SIGMOD16_holistic_influence_maximization.pdf">Holistic Influence Maximization: Combining Scalability and Efficiency with Opinion-Aware Models</a> in <a href="http://sigmod2016.org/"> SIGMOD </a>, 2016<br><br></li>
-
-
-<li> <a href="index.html">Sainyam Galhotra</a>, Amitabha Bagchi, Srikanta Bedathur, Maya Ramanath and Vidit Jain. <a href = "papers/VLDB16_conductance.pdf"> Tracking the Conductance of Rapidly Evolving Topic-Subgraphs </a> in <a href="http://vldb2016.persistent.com/"> VLDB</a>, 2016 <br><br></li>
-
-
-<li> <a href="index.html">Sainyam Galhotra </a>, Akhil Arora, Srinivas Virinchi and Shourya Roy. <a href="papers/WWW15_ASIM.pdf">ASIM: A Scalable Algorithm for Influence Maximization under the Independent Cascade Model</a> in <a href = "http://www.www2015.it/">WWW</a>, 2015 <a href="papers/WWW15_ASIM_poster.pdf">[Poster]</a><br><br></li>
-
-
-</ul>
-<br>
-<br>
-<br>
-<!--<ul>
-<h3><font color="blue" >Academics</font></h3>
-    <li>Masters in Computer Science &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        CGPA : 4.0/4.0<br>
-        University of Massachusetts Amherst &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       Sept 2015 - Present<br></li>
-    
-    <br><br>
-    <li>B.Tech in Computer Science and Engineering<br>
-        Indian Institute of Technology Delhi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        July 2010 - May 2014<br></li>
-</ul>
-<br><br><br>
-<h3><font color="blue" >Work Experience</font></h3>
-<ul>
-    
-    <li>Research Intern, Google Research, Mountain View, USA  <br><br></li>
-    
-    <li>Budding Scientist, Xerox Research Center India (XRCI)  <br><br></li>
-    
-    <li>Research Intern, Yahoo Labs, Bangalore, India  <br><br></li>
-    
-    <li>Ecole Nationale Sup´erieure des T´el´ecommunications, France  <br><br></li>
-    
-</ul>-->
-
-<h4>Contact:</h4> sainyam at cs dot umass dot edu</li>
-		  <!-- END BODY
-		  <div class="x"></div> --></div>
-		<div id="footer">
-	 	<!-- Start of StatCounter Code -->
-
-	 	
-	 	
-	 	
-	 	
-	 	<!-- End of StatCounter Code -->
-		</div>	
-		</div>
-		
-	</div>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -188,6 +190,6 @@
 
   ga('create', 'UA-93595056-1', 'auto');
   ga('send', 'pageview');
-
-</script>
-</body></html>
+      
+  </body>
+</html>
